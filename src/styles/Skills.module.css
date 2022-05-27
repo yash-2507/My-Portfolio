@@ -1,0 +1,58 @@
+.parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+.subParent {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    color: #4070f4;
+}
+.hr {
+    background: #4070f4;
+    height: 3px;
+    width: 2%;
+    margin-top: -6px;
+}
+.main {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+}
+.main div {
+    flex: 1;
+}
+.skillsWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.skillsWrap div {
+    padding: 10px 0 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 6px 0 rgb(0 0 0 / 16%);
+    border: none;
+    font-size: 15px;
+    color: gray;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.skillsWrap div i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #4070f4;
+}
+.skillsWrap div svg {
+    margin-right: 10px;
+    font-size: 25px;
+    color: #4070f4;
+}

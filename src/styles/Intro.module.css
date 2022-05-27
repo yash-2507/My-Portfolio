@@ -1,0 +1,70 @@
+.Intro_parent {
+    margin-top: 60px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Intro_children {
+    width: 75%;
+    display: flex;
+    /* height: 100%; */
+}
+.Intro_children div {
+    flex: 1;
+    height: 100%;
+}
+.Intro_left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.Intro_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Intro_Resume {
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+    border: 1px solid transparent;
+}
+.Intro_Resume:hover {
+    border-color: #4070f4;
+    background: whitesmoke;
+    color: #4070f4;
+}
+.Intro_Resume i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+.Intro_desc {
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.Intro_myName {
+    color: #4070f4;
+}
+.Intro_socialLinks {
+    display: flex;
+    gap: 30px;
+}
+.Intro_socialLinks i {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(75, 75, 75);
+}
+.Intro_socialLinks i:hover {
+    color: #4070f4;
+    transition: 0.6s;
+}

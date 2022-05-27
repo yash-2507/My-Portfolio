@@ -1,0 +1,21 @@
+.Project_parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Project_children {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Project_Header {
+    color: #4070f4;
+}
+.Project_hr {
+    background: #4070f4;
+    height: 3px;
+    width: 4%;
+    margin-top: -6px;
+}

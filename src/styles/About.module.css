@@ -1,0 +1,47 @@
+.About_parent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.About_children {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.About_title {
+    color: #4070f4;
+}
+.About_hr {
+    background: #4070f4;
+    height: 3px;
+    width: 4%;
+    margin-top: -6px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.About_name {
+    font-size: 22px;
+    font-weight: 750;
+    color: rgb(73, 73, 73);
+}
+.About_desc {
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+    font-weight: 600;
+}
+.About_mail {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(73, 73, 73);
+}
+.About_mail i {
+    margin-left: 10px;
+    cursor: pointer;
+}
