@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "../styles/Contact.module.css";
 
 export default function Contact() {
@@ -29,7 +28,7 @@ export default function Contact() {
                     </div>
                     <div className={styles.Contact_social}>
                         <a href="https://t.me/iAM_YSH">
-                            <i class="fa-brands fa-telegram"></i>
+                            <i className="fa-brands fa-telegram"></i>
                         </a>
                     </div>
                 </div>

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/About.module.css";
 
 export default function About() {
+    const [isCopied, setIsCopied] = useState(false);
+    const copyMail = () => {
+        navigator.clipboard.writeText("imyash.654@gmail.com");
+        if (isCopied) {
+            alert("E-Mail already copied !");
+        } else {
+            setIsCopied(true);
+        }
+    };
     return (
         <div className={styles.About_parent}>
             <div className={styles.About_children}>
@@ -18,7 +27,10 @@ export default function About() {
                     </p>
                     <p className={styles.About_mail}>
                         Drop a mail: imyash.654@gmail.com
-                        <i className="fa-solid fa-copy"></i>
+                        <i className="fa-solid fa-copy" onClick={copyMail}></i>
+                        {isCopied ? (
+                            <span className={styles.copied}>copied</span>
+                        ) : undefined}
                     </p>
                 </div>
             </div>

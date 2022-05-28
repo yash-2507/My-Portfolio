@@ -45,3 +45,7 @@
     margin-left: 10px;
     cursor: pointer;
 }
+.copied {
+    color: #4070f4;
+    padding: 0 0 0 5px;
+}

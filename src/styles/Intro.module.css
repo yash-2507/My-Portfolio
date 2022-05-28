@@ -56,7 +56,7 @@
     margin-left: 5px;
 }
 .Intro_desc {
-    font-size: 44px;
+    font-size: 3.5vw;
     font-weight: 600;
     letter-spacing: -1px;
 }
@@ -67,6 +67,8 @@
     -webkit-text-stroke: 0.1vw #4070f4;
     text-transform: uppercase;
     z-index: 0;
+    font-size: 3vw;
+    white-space: nowrap;
 }
 .Intro_myName::before
 {

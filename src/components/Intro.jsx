@@ -17,7 +17,7 @@ export default function Intro() {
                         </p>
                         <p
                             className={styles.Intro_desc}
-                            style={{ fontSize: 30, color: "gray" }}
+                            style={{ fontSize: "2vw", color: "gray" }}
                         >
                             MERN Stack Web Developer
                         </p>

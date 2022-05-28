@@ -29,9 +29,9 @@
     border-bottom: 3px solid;
     border-color: transparent;
 }
-.Nav_list:nth-child(1) {
+/* .Nav_list:nth-child(1) {
     border-bottom: 3px solid #4070f4;
-}
+} */
 .Nav_list:hover {
     border-color: #4070f4;
     cursor: pointer;
