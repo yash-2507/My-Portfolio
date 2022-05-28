@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Intro.module.css";
+import MyPic from "../assets/intro.png";
 
 export default function Intro() {
     return (
@@ -38,9 +39,14 @@ export default function Intro() {
                         <a href="https://www.github.com/yash-2507">
                             <i className="fa-brands fa-github-square"></i>
                         </a>
+                        <a href="https://t.me/iAM/YSH">
+                            <i className="fa-brands fa-telegram"></i>
+                        </a>
                     </div>
                 </div>
-                <div className={styles.Intro_right}>Right</div>
+                <div className={styles.Intro_right}>
+                    <img src={MyPic} alt="" />
+                </div>
             </div>
         </div>
     );

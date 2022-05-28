@@ -7,7 +7,7 @@ export default function Contact() {
         <div className={styles.Contact_parent}>
             <div className={styles.Contact_subParent}>
                 <div>
-                    <p className={styles.Contact_header}>Get in touch</p>
+                    <p className={styles.Contact_header}>Let's Connect ...</p>
                     <hr className={styles.Contact_hr}></hr>
                 </div>
                 <p className={styles.Contact_name}>Yashasvi Srivastava</p>
@@ -25,6 +25,11 @@ export default function Contact() {
                     <div className={styles.Contact_social}>
                         <a href="tel:+916387353140">
                             <i className="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                    <div className={styles.Contact_social}>
+                        <a href="https://t.me/iAM_YSH">
+                            <i class="fa-brands fa-telegram"></i>
                         </a>
                     </div>
                 </div>

@@ -19,3 +19,72 @@
     width: 4%;
     margin-top: -6px;
 }
+.Project_Wrapper {
+    padding: 50px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(2, 49%);
+    grid-gap: 50px;
+}
+.Project_content {
+    padding: 10px;
+    height: 90vh;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+.Project_content img {
+    /* height: 50%; */
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.Project_content img:hover {
+    transform: scale(1.03);
+}
+.Project_contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Project_btnWrap {
+    display: flex;
+    gap: 20px;
+}
+.Project_btnWrap button {
+    height: 40px;
+    width: 30%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #4070f4;
+    cursor: pointer;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.Project_btnWrap button:hover {
+    color: #4070f4;
+    background: white;
+    border-color: #4070f4;
+}
+.Project_header {
+    color: rgb(73, 73, 73);
+}
+.Project_tech {
+    font-size: 14px;
+    font-weight: 700;
+    color: darkgray;
+}
+.Project_desc,
+.Project_desc1 {
+    font-size: 17px;
+    font-weight: 500;
+    color: gray;
+}

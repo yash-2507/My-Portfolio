@@ -7,7 +7,7 @@
     justify-content: center;
 }
 .Intro_children {
-    width: 75%;
+    width: 80%;
     display: flex;
     /* height: 100%; */
 }
@@ -25,6 +25,13 @@
     justify-content: center;
     align-items: center;
 }
+.Intro_right img {
+    height: 50vh;
+    /* width: 220px; */
+    border: 1px solid gray;
+    padding: 3px;
+    border-radius: 8px;
+}
 .Intro_Resume {
     height: 40px;
     width: 120px;
@@ -35,7 +42,8 @@
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    color: gray;
+    color: white;
+    background: #4070f4;
     border: 1px solid transparent;
 }
 .Intro_Resume:hover {
@@ -53,7 +61,35 @@
     letter-spacing: -1px;
 }
 .Intro_myName {
+    color: white;
+    /* padding: 0px 5px; */
+    position: relative;
+    -webkit-text-stroke: 0.1vw #4070f4;
+    text-transform: uppercase;
+    z-index: 0;
+}
+.Intro_myName::before
+{
+    content: "Yashasvi\00a0Srivastava";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
     color: #4070f4;
+    -webkit-text-stroke: 0vw #4070f4;
+    border-right: 2px solid #4070f4;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+    z-index: 3;
+}
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0%;
+    }
+    70%, 90% {
+        width: 100%;
+    }
 }
 .Intro_socialLinks {
     display: flex;
@@ -62,9 +98,10 @@
 .Intro_socialLinks i {
     font-size: 30px;
     cursor: pointer;
-    color: rgb(75, 75, 75);
+    color: rgb(78, 78, 78);
+    transition: transform 0.8s;
 }
 .Intro_socialLinks i:hover {
     color: #4070f4;
-    transition: 0.6s;
+    transform: scale(1.1);
 }
