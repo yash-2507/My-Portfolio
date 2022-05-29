@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% );
 }
 .Intro_children {
     width: 80%;
@@ -18,7 +19,7 @@
 .Intro_left {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 .Intro_right {
     display: flex;
@@ -43,7 +44,7 @@
     font-size: 16px;
     font-weight: 600;
     color: white;
-    background: #4070f4;
+    background: #FBCB0A;
     border: 1px solid transparent;
 }
 .Intro_Resume:hover {
@@ -61,10 +62,10 @@
     letter-spacing: -1px;
 }
 .Intro_myName {
-    color: white;
+    color: transparent;
     /* padding: 0px 5px; */
     position: relative;
-    -webkit-text-stroke: 0.1vw #4070f4;
+    -webkit-text-stroke: 0.05vw #FBCB0A;
     text-transform: uppercase;
     z-index: 0;
     font-size: 3vw;
@@ -78,9 +79,9 @@
     left: 0;
     width: 0;
     height: 100%;
-    color: #4070f4;
-    -webkit-text-stroke: 0vw #4070f4;
-    border-right: 2px solid #4070f4;
+    color: #FBCB0A;
+    -webkit-text-stroke: 0vw #FBCB0A;
+    border-right: 2px solid #FBCB0A;
     overflow: hidden;
     animation: animate 6s linear infinite;
     z-index: 3;
@@ -95,15 +96,16 @@
 }
 .Intro_socialLinks {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 .Intro_socialLinks i {
     font-size: 30px;
     cursor: pointer;
-    color: rgb(78, 78, 78);
+    color: #FEF9A7;
     transition: transform 0.8s;
+    padding: 3px;
 }
 .Intro_socialLinks i:hover {
-    color: #4070f4;
-    transform: scale(1.1);
+    color: #FBCB0A;
+    transform: scale(1.2);
 }
