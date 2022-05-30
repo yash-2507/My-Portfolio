@@ -30,8 +30,8 @@
     height: 50vh;
     /* width: 220px; */
     border: 1px solid gray;
-    padding: 3px;
-    border-radius: 8px;
+    padding: 5px;
+    border-radius: 50%;
 }
 .Intro_Resume {
     height: 40px;
@@ -45,7 +45,7 @@
     font-weight: 600;
     color: white;
     background: #FBCB0A;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
 }
 .Intro_Resume:hover {
     border-color: #4070f4;
