@@ -38,7 +38,7 @@ export default function Intro() {
                         className={styles.Intro_Resume}
                         onClick={() =>
                             window.open(
-                                "https://drive.google.com/file/d/19ufFZLX96ai_oM4To_OrXKFWs4JiKMSE/view?usp=sharing"
+                                "https://drive.google.com/file/d/19QGXo2DFw3KZy9HfX5iX1FxKBnAh5hjo/view?usp=sharing"
                             )
                         }
                     >
