@@ -1,18 +1,19 @@
 .Intro_parent {
-    margin-top: 60px;
+    margin-top: 30px;
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 30px);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% );
+    background: #E9D5DA;
+    /* background: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% ); */
 }
 .Intro_children {
     width: 80%;
     display: flex;
     /* height: 100%; */
 }
-.Intro_children div {
+.Intro_children>div {
     flex: 1;
     height: 100%;
 }
@@ -26,13 +27,70 @@
     justify-content: center;
     align-items: center;
 }
-.Intro_right img {
-    height: 50vh;
-    /* width: 220px; */
-    border: 1px solid gray;
-    padding: 5px;
-    border-radius: 50%;
+.IntroPic_Wrapper {
+    position: relative;
 }
+.IntroPic_Wrapper div:nth-child(3) {
+    background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 8px;
+    animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+.IntroPic_Wrapper img {
+    height: min(45vh, 25vw);
+    width: auto;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px 0px #df8ca0;
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+}
+.IntroPic_Wrapper img:hover {
+    animation: image-anime 1.0s linear infinite;
+}
+
+@keyframes image-anime {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(10.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-4.0deg) }
+    30% { transform: rotate(10.0deg) }
+    40% { transform: rotate(-2.0deg) }
+    50% { transform: rotate(8.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+.imageBack {
+    height: min(45vh, 25vw);
+    aspect-ratio: 1/1;
+    background-color: white;
+    position: absolute;
+}
+.imageBack:first-of-type {
+    z-index: 3;
+    background-color: #E9D5DA;
+    transform: rotate(20deg);
+    animation: rotate 6s ease-in-out infinite;
+}
+@keyframes rotate 
+{
+    0% 
+    {
+        transform: rotate(20deg);
+    }
+    100%
+    {
+        transform: rotate(380deg);
+    }
+}
+
 .Intro_Resume {
     height: 40px;
     width: 120px;
@@ -46,29 +104,36 @@
     color: white;
     background: #FBCB0A;
     border: 2px solid transparent;
+    margin-top: 10vh;
 }
 .Intro_Resume:hover {
-    border-color: #4070f4;
+    border-color: #FC6D6D;
     background: whitesmoke;
-    color: #4070f4;
+    color: #FC6D6D;
 }
 .Intro_Resume i {
     font-size: 20px;
     margin-left: 5px;
 }
 .Intro_desc {
-    font-size: 3.5vw;
+    font-size: 3.25vw;
     font-weight: 600;
     letter-spacing: -1px;
+    color: rgb(48, 48, 48);
 }
+.Intro_desc:first-of-type{
+    color: #363062;
+    font-size: 2vw;
+}
+
 .Intro_myName {
     color: transparent;
     /* padding: 0px 5px; */
     position: relative;
-    -webkit-text-stroke: 0.05vw #FBCB0A;
+    /* -webkit-text-stroke: 0.02vw #FBCB0A; */
     text-transform: uppercase;
     z-index: 0;
-    font-size: 3vw;
+    font-size: 3.5vw;
     white-space: nowrap;
 }
 .Intro_myName::before
@@ -98,14 +163,25 @@
     display: flex;
     gap: 20px;
 }
+.Intro_socialLinks a {
+    text-decoration: none;
+}
 .Intro_socialLinks i {
-    font-size: 30px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 10px;
     cursor: pointer;
-    color: #FEF9A7;
+    background: #363062;
+    color: white;
     transition: transform 0.8s;
-    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 3px; */
 }
 .Intro_socialLinks i:hover {
-    color: #FBCB0A;
+    color: #FC6D6D;
     transform: scale(1.2);
 }

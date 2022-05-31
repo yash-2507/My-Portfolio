@@ -61,7 +61,7 @@ export default function Navbar() {
                         id="home"
                         style={{
                             borderBottom: home
-                                ? "3px solid #4070f4"
+                                ? "2px solid #E9D5DA"
                                 : undefined,
                         }}
                         onClick={() => {
@@ -78,7 +78,7 @@ export default function Navbar() {
                         id="about"
                         style={{
                             borderBottom: about
-                                ? "3px solid #4070f4"
+                                ? "2px solid #E9D5DA"
                                 : undefined,
                         }}
                         onClick={() => {
@@ -95,7 +95,7 @@ export default function Navbar() {
                         id="skills"
                         style={{
                             borderBottom: skills
-                                ? "3px solid #4070f4"
+                                ? "2px solid #E9D5DA"
                                 : undefined,
                         }}
                         onClick={() => {
@@ -112,7 +112,7 @@ export default function Navbar() {
                         id="projects"
                         style={{
                             borderBottom: project
-                                ? "3px solid #4070f4"
+                                ? "2px solid #E9D5DA"
                                 : undefined,
                         }}
                         onClick={() => {
@@ -129,7 +129,7 @@ export default function Navbar() {
                         id="contact"
                         style={{
                             borderBottom: contact
-                                ? "3px solid #4070f4"
+                                ? "2px solid #E9D5DA"
                                 : undefined,
                         }}
                         onClick={() => {

@@ -1,0 +1,81 @@
+.introDescWrap {
+    display: inline-flex;
+}
+.staticText {
+    position: relative;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: gray;
+    padding-top: 15px;
+    padding-left: 8px;
+    z-index: 1.5;
+}
+.dynamicText {
+    position: absolute;
+    height: 2.92vw;
+    line-height: 2.92vw;
+    margin-top: 50px;
+    margin-left: 32vw;
+    overflow: hidden;
+}
+.lastPhase {
+    position: absolute;
+    margin-left: 35vw;
+    margin-top: 85px;
+}
+.dynamicText li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 2.0497vw;
+    color: #FC6D6D;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide 
+{
+    100% {
+        top: -11.68vw;
+    }
+}
+.dynamicText li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #FC6D6D;
+    background: #E9D5DA;
+    animation: typing 1.5s steps(9) infinite;
+}
+@keyframes typing 
+{
+    100% {
+        left: 100%;
+        margin: 0 -15px 0 15px;
+    }
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+.Decorate1 {
+    position: absolute;
+    width: 10vw;
+    z-index: 0;
+}
