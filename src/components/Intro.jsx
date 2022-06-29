@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../styles/Intro.module.css";
 import MyPic from "../assets/intro.png";
 import "../styles/Intro.css";
-import Decorate1 from "../assets/abstract-shape.png";
 
 export default function Intro() {
     return (
@@ -38,7 +37,7 @@ export default function Intro() {
                         className={styles.Intro_Resume}
                         onClick={() =>
                             window.open(
-                                "https://drive.google.com/file/d/19QGXo2DFw3KZy9HfX5iX1FxKBnAh5hjo/view?usp=sharing"
+                                "https://drive.google.com/file/d/1DwAvC0xTozToU8curA9uJH8gv2bmY0Di/view?usp=sharing"
                             )
                         }
                     >
