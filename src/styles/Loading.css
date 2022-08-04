@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     background: #111;
 }
 .loading-parent {
@@ -111,6 +113,6 @@
     color: #fff;
     font-size: 1.5rem;
     font-family: consolas;
-    bottom: -80px;
+    bottom: -120px;
     letter-spacing: 0.15rem;
 }
