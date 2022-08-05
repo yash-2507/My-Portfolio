@@ -9,28 +9,29 @@ import Skills from "./components/Skills";
 import styles from "./styles/App.module.css";
 
 function App() {
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 4000);
-    }, []);
-    return (
-        <div className={styles.App}>
-            {loading ? (
-                <Loading />
-            ) : (
-                <>
-                    <Navbar />
-                    <Intro />
-                    <About />
-                    <Skills />
-                    <Project />
-                    <Contact />
-                </>
-            )}
-        </div>
-    );
+   const [loading, setLoading] = useState(true);
+   useEffect(() => {
+      setTimeout(() => {
+         setLoading(false);
+      }, 4000);
+   }, []);
+
+   return (
+      <div className={styles.App}>
+         {loading ? (
+            <Loading />
+         ) : (
+            <>
+               <Navbar />
+               <Intro />
+               <About />
+               <Skills />
+               <Project />
+               <Contact />
+            </>
+         )}
+      </div>
+   );
 }
 
 export default App;
