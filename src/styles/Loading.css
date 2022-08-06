@@ -3,13 +3,14 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background: #111;
 }
 .loading-parent {
     position: relative;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,4 +116,15 @@
     font-family: consolas;
     bottom: -120px;
     letter-spacing: 0.15rem;
+}
+
+.loading-left {
+    height: 100%;
+    width: 50%;
+    background-color: #eee;
+}
+.loading-right {
+    height: 100%;
+    width: 50%;
+    background-color: #aaa;
 }
