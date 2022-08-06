@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/Project.module.css";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
@@ -6,7 +6,8 @@ import upGrad from "../assets/upGrad.png";
 import JCrew from "../assets/JCrew.png";
 import Revv from "../assets/Revv.png";
 import Bewakoof from "../assets/Bewakoof.png";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Project() {
    const projects = [
@@ -47,21 +48,38 @@ export default function Project() {
          image: Revv,
       },
    ];
+
+   const animation = useAnimation();
+   const { ref, inView } = useInView({
+      threshold: 0.15,
+   });
+
+   useEffect(() => {
+      console.log("UseEffect inView", inView);
+      if (inView) {
+         animation.start({
+            scale: 1,
+            y: 0,
+            transition: { duration: 1.5 },
+         });
+      } else {
+         animation.start({
+            scale: 0,
+            y: -100,
+         });
+      }
+   }, [inView]);
+
    return (
-      <div className={styles.Project_parent}>
+      <div className={styles.Project_parent} ref={ref}>
          <div className={styles.Project_children}>
             <h2 className={styles.Project_Header}>Projects</h2>
             <hr className={styles.Project_hr}></hr>
-            <div className={styles.Project_Wrapper}>
+            <motion.div className={styles.Project_Wrapper}>
                {projects.map((project, i) => {
                   return (
                      <>
-                        <motion.div
-                           className={styles.Project_content}
-                           key={i}
-                           initial={{ opacity: 0, translateX: -50 }}
-                           animate={{ opacity: 1, translateX: 0 }}
-                        >
+                        <motion.div className={styles.Project_content} key={i} animate={animation}>
                            <img src={project.image} alt='' />
                            <div className={styles.Project_contentWrapper}>
                               <h2 className={styles.Project_header}>{project.title}</h2>
@@ -83,7 +101,7 @@ export default function Project() {
                      </>
                   );
                })}
-            </div>
+            </motion.div>
          </div>
       </div>
    );

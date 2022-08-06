@@ -59,7 +59,7 @@ export default function Navbar() {
                   alt=''
                   initial={{ opacity: 0, translateX: -50 }}
                   animate={{ opacity: 1, translateX: 0 }}
-                  transition={{ duration: 0.4 }}
+                  transition={{ duration: 0.4, delay: 1}}
                />
             </div>
             <ul className={styles.Nav_listWrapper}>
@@ -68,7 +68,7 @@ export default function Navbar() {
                   id='home'
                   initial={{ opacity: 0, translateX: -50 }}
                   animate={{ opacity: 1, translateX: 0 }}
-                  transition={{ duration: 0.4, delay: 0.3 * 1 }}
+                  transition={{ duration: 0.4, delay: 1.25 }}
                   style={{
                      borderBottom: home ? "2px solid #E9D5DA" : undefined,
                   }}
@@ -86,7 +86,7 @@ export default function Navbar() {
                   id='about'
                   initial={{ opacity: 0, translateX: -50 }}
                   animate={{ opacity: 1, translateX: 0 }}
-                  transition={{ duration: 0.4, delay: 0.3 * 2 }}
+                  transition={{ duration: 0.4, delay: 1.50 }}
                   style={{
                      borderBottom: about ? "2px solid #E9D5DA" : undefined,
                   }}
@@ -104,7 +104,7 @@ export default function Navbar() {
                   id='skills'
                   initial={{ opacity: 0, translateX: -50 }}
                   animate={{ opacity: 1, translateX: 0 }}
-                  transition={{ duration: 0.4, delay: 0.3 * 3 }}
+                  transition={{ duration: 0.4, delay: 1.75 }}
                   style={{
                      borderBottom: skills ? "2px solid #E9D5DA" : undefined,
                   }}
@@ -122,7 +122,7 @@ export default function Navbar() {
                   id='projects'
                   initial={{ opacity: 0, translateX: -50 }}
                   animate={{ opacity: 1, translateX: 0 }}
-                  transition={{ duration: 0.4, delay: 0.3 * 4 }}
+                  transition={{ duration: 0.4, delay: 2 }}
                   style={{
                      borderBottom: project ? "2px solid #E9D5DA" : undefined,
                   }}
@@ -140,7 +140,7 @@ export default function Navbar() {
                   id='contact'
                   initial={{ opacity: 0, translateX: -50 }}
                   animate={{ opacity: 1, translateX: 0 }}
-                  transition={{ duration: 0.4, delay: 0.3 * 5 }}
+                  transition={{ duration: 0.4, delay: 2.25 }}
                   style={{
                      borderBottom: contact ? "2px solid #E9D5DA" : undefined,
                   }}
