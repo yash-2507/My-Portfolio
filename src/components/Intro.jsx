@@ -15,12 +15,12 @@ export default function Intro() {
          animation.start({
             opacity: 1,
             x: 0,
-            transition: { duration: 1.5, type: "spring", bounce: 0.2, ease: "easeIn" },
+            transition: { duration: 1.5, type: "spring", bounce: 0.2, ease: "easeOut" },
          });
       } else {
          animation.start({
             opacity: 0,
-            x: -100,
+            x: -50,
          });
       }
    }, [inView]);

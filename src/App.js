@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import CustomCursor from "./components/CustomCursor";
 import Intro from "./components/Intro";
 import Loading from "./components/Loading";
 import Navbar from "./components/Navbar";
@@ -22,6 +23,7 @@ function App() {
             <Loading />
          ) : (
             <>
+               <CustomCursor />
                <Navbar />
                <Intro />
                <About />
