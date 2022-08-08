@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "../styles/Intro.module.css";
-import MyPic from "../assets/intro.png";
-import "../styles/Intro.css";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import React from 'react';
+import styles from '../styles/Intro.module.css';
+import MyPic from '../assets/intro.webp';
+import '../styles/Intro.css';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 export default function Intro() {
    const animation = useAnimation();
@@ -15,7 +15,7 @@ export default function Intro() {
          animation.start({
             opacity: 1,
             x: 0,
-            transition: { duration: 1.5, type: "spring", bounce: 0.2, ease: "easeOut" },
+            transition: { duration: 1.5, type: 'spring', bounce: 0.2, ease: 'easeOut' },
          });
       } else {
          animation.start({
@@ -52,7 +52,7 @@ export default function Intro() {
                   className={styles.Intro_Resume}
                   onClick={() =>
                      window.open(
-                        "https://drive.google.com/file/d/1DwAvC0xTozToU8curA9uJH8gv2bmY0Di/view?usp=sharing"
+                        'https://drive.google.com/file/d/1DwAvC0xTozToU8curA9uJH8gv2bmY0Di/view?usp=sharing',
                      )
                   }
                >
@@ -64,7 +64,7 @@ export default function Intro() {
                      initial={{ opacity: 0, translateX: -50 }}
                      animate={{ opacity: 1, translateX: 0 }}
                      transition={{
-                        type: "spring",
+                        type: 'spring',
                         bounce: 0.2,
                         duration: 0.5,
                         delay: 1.5 * 1,
@@ -77,7 +77,7 @@ export default function Intro() {
                      initial={{ opacity: 0, translateX: -50 }}
                      animate={{ opacity: 1, translateX: 0 }}
                      transition={{
-                        type: "spring",
+                        type: 'spring',
                         bounce: 0.2,
                         duration: 0.5,
                         delay: 1.75,
@@ -90,7 +90,7 @@ export default function Intro() {
                      initial={{ opacity: 0, translateX: -50 }}
                      animate={{ opacity: 1, translateX: 0 }}
                      transition={{
-                        type: "spring",
+                        type: 'spring',
                         bounce: 0.2,
                         duration: 0.5,
                         delay: 2,
@@ -105,18 +105,17 @@ export default function Intro() {
                   <motion.img
                      src={MyPic}
                      alt=''
-                     initial={{ opacity: 0, scale: 0 }}
-                     animate={{ opacity: 1, scale: 1 }}
+                     initial={{ opacity: 0 }}
+                     animate={{ opacity: 1, width: 'auto' }}
                      transition={{
                         duration: 0.8,
-                        ease: "easeIn",
-                        type: "slide",
+                        ease: 'easeOut',
+                        type: 'slide',
                      }}
                   />
                   <div className={styles.imageBack}></div>
                   <div className={styles.imageBack}></div>
                </div>
-               {/* <img src={Decorate1} className="Decorate1" alt="" /> */}
             </div>
          </div>
       </div>
