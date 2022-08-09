@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import styles from "../styles/Project.module.css";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
-import upGrad from "../assets/upGrad.png";
-import JCrew from "../assets/JCrew.png";
-import Revv from "../assets/Revv.png";
-import Bewakoof from "../assets/Bewakoof.png";
+import upGrad from "../assets/upGrad.webp";
+import JCrew from "../assets/JCrew.webp";
+import Revv from "../assets/Revv.webp";
+import Bewakoof from "../assets/Bewakoof.webp";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

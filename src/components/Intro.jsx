@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 
 export default function Intro() {
    const animation = useAnimation();
+   const imgAnimation = useAnimation();
    const { ref, inView } = useInView();
 
    useEffect(() => {
@@ -17,15 +18,34 @@ export default function Intro() {
             x: 0,
             transition: { duration: 1.5, type: 'spring', bounce: 0.2, ease: 'easeOut' },
          });
+         imgAnimation.start({
+            opacity: 1,
+            width: 'auto',
+            transition: {
+               duration: 0.8,
+               ease: 'easeOut',
+               delay: 0.3,
+            },
+         });
       } else {
          animation.start({
             opacity: 0,
             x: -50,
          });
+         imgAnimation.start({
+            opacity: 0,
+            width: 0,
+         });
       }
    }, [inView]);
    return (
-      <div className={styles.Intro_parent} ref={ref}>
+      <motion.div
+         className={styles.Intro_parent}
+         ref={ref}
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }}
+         transition={{ duration: 0.3, delay: 0.6 }}
+      >
          <div className={styles.Intro_children}>
             <div className={styles.Intro_left}>
                <motion.div animate={animation} className={styles.Intro_main}>
@@ -102,22 +122,12 @@ export default function Intro() {
             </div>
             <div className={styles.Intro_right}>
                <div className={styles.IntroPic_Wrapper}>
-                  <motion.img
-                     src={MyPic}
-                     alt=''
-                     initial={{ opacity: 0 }}
-                     animate={{ opacity: 1, width: 'auto' }}
-                     transition={{
-                        duration: 0.8,
-                        ease: 'easeOut',
-                        type: 'slide',
-                     }}
-                  />
+                  <motion.img src={MyPic} alt='' animate={imgAnimation} />
                   <div className={styles.imageBack}></div>
                   <div className={styles.imageBack}></div>
                </div>
             </div>
          </div>
-      </div>
+      </motion.div>
    );
 }

@@ -1,37 +1,46 @@
-import { useEffect, useState } from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import CustomCursor from "./components/CustomCursor";
-import Intro from "./components/Intro";
-import Loading from "./components/Loading";
-import Navbar from "./components/Navbar";
-import Project from "./components/Project";
-import Skills from "./components/Skills";
-import styles from "./styles/App.module.css";
+import { motion, AnimatePresence, AnimateSharedLayout } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import About from './components/About';
+import Contact from './components/Contact';
+import CustomCursor from './components/CustomCursor';
+import Intro from './components/Intro';
+import Loading from './components/Loading';
+import Loader from './components/Loader';
+import Navbar from './components/Navbar';
+import Project from './components/Project';
+import Skills from './components/Skills';
+import styles from './styles/App.module.css';
+import './sass/main.scss';
 
 function App() {
    const [loading, setLoading] = useState(true);
    useEffect(() => {
-      setTimeout(() => {
-         setLoading(false);
-      }, 2500);
-   }, []);
+      loading
+         ? document.querySelector('body').classList.add('loading')
+         : document.querySelector('body').classList.remove('loading');
+   }, [loading]);
 
    return (
       <div className={styles.App}>
-         {loading ? (
-            <Loading />
-         ) : (
-            <>
-               <CustomCursor />
-               <Navbar />
-               <Intro />
-               <About />
-               <Skills />
-               <Project />
-               <Contact />
-            </>
-         )}
+         <AnimateSharedLayout type='crossfade'>
+            <AnimatePresence>
+               {loading ? (
+                  <motion.div key='loader'>
+                     <Loader setLoading={setLoading} />
+                  </motion.div>
+               ) : (
+                  <>
+                     <CustomCursor />
+                     <Navbar />
+                     <Intro />
+                     <About />
+                     <Skills />
+                     <Project />
+                     <Contact />
+                  </>
+               )}
+            </AnimatePresence>
+         </AnimateSharedLayout>
       </div>
    );
 }
