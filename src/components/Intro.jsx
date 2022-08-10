@@ -18,13 +18,14 @@ export default function Intro() {
             x: 0,
             transition: { duration: 1.5, type: 'spring', bounce: 0.2, ease: 'easeOut' },
          });
+
          imgAnimation.start({
             opacity: 1,
             width: 'auto',
             transition: {
                duration: 0.8,
                ease: 'easeOut',
-               delay: 0.3,
+               delay: 0.6,
             },
          });
       } else {
@@ -42,8 +43,8 @@ export default function Intro() {
       <motion.div
          className={styles.Intro_parent}
          ref={ref}
-         initial={{ opacity: 0 }}
-         animate={{ opacity: 1 }}
+         initial={{ opacity: 0, x: -50 }}
+         animate={{ opacity: 1, x: 0 }}
          transition={{ duration: 0.3, delay: 0.6 }}
       >
          <div className={styles.Intro_children}>
