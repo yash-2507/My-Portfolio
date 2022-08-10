@@ -7,18 +7,11 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 
 export default function Intro() {
-   const animation = useAnimation();
    const imgAnimation = useAnimation();
    const { ref, inView } = useInView();
 
    useEffect(() => {
       if (inView) {
-         animation.start({
-            opacity: 1,
-            x: 0,
-            transition: { duration: 1.5, type: 'spring', bounce: 0.2, ease: 'easeOut' },
-         });
-
          imgAnimation.start({
             opacity: 1,
             width: 'auto',
@@ -29,10 +22,6 @@ export default function Intro() {
             },
          });
       } else {
-         animation.start({
-            opacity: 0,
-            x: -50,
-         });
          imgAnimation.start({
             opacity: 0,
             width: 0,
@@ -49,7 +38,7 @@ export default function Intro() {
       >
          <div className={styles.Intro_children}>
             <div className={styles.Intro_left}>
-               <motion.div animate={animation} className={styles.Intro_main}>
+               <div className={styles.Intro_main}>
                   <p className={styles.Intro_desc}>
                      Hi there<span class='wave'>👋</span>, I'm
                   </p>
@@ -68,7 +57,7 @@ export default function Intro() {
                      </ul>
                      <div className='staticText lastPhase'>Tech Stacks.</div>
                   </div>
-               </motion.div>
+               </div>
                <button
                   className={styles.Intro_Resume}
                   onClick={() =>

@@ -22,9 +22,6 @@
     flex-direction: column;
     gap: 30px;
 }
-.Intro_main {
-    opacity: 0;
-}
 .Intro_right {
     display: flex;
     justify-content: center;
