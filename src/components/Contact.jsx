@@ -12,7 +12,7 @@ export default function Contact() {
                 <p className={styles.Contact_name}>Yashasvi Srivastava</p>
                 <div className={styles.Contact_socialWrapper}>
                     <div className={styles.Contact_social}>
-                        <a href="https://www.linkedin.com/in/yashasvi-srivastava-13aba5236">
+                        <a href="https://www.linkedin.com/in/yash2507">
                             <i className="fa-brands fa-linkedin-in"></i>
                         </a>
                     </div>

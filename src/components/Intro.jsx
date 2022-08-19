@@ -70,7 +70,7 @@ export default function Intro() {
                     </button>
                     <div className={styles.Intro_socialLinks}>
                         <motion.a
-                            href='https://www.linkedin.com/in/yashasvi-srivastava-13aba5236'
+                            href='https://www.linkedin.com/in/yash2507'
                             initial={{ opacity: 0, translateX: -50 }}
                             animate={{ opacity: 1, translateX: 0 }}
                             transition={{
@@ -96,7 +96,7 @@ export default function Intro() {
                             <i className='fa-brands fa-github'></i>
                         </motion.a>
                         <motion.a
-                            href='https://t.me/iAM/YSH'
+                            href='mailto:imyash.654@gmail.com'
                             initial={{ opacity: 0, translateX: -50 }}
                             animate={{ opacity: 1, translateX: 0 }}
                             transition={{
@@ -106,7 +106,7 @@ export default function Intro() {
                                 delay: 2,
                             }}
                         >
-                            <i className='fa-brands fa-telegram'></i>
+                            <i className='fa-solid fa-envelope'></i>
                         </motion.a>
                     </div>
                 </div>
