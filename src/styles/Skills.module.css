@@ -18,7 +18,8 @@
     background: #4070f4;
     height: 3px;
     width: 2%;
-    margin-top: -6px;
+    margin-top: 6px;
+    margin-bottom: 20px;
 }
 .main {
     width: 100%;
@@ -33,6 +34,7 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    margin-top: 30px;
 }
 .skillsWrap div {
     padding: 10px 0 10px 20px;
@@ -59,4 +61,13 @@
     margin-right: 10px;
     font-size: 25px;
     color: #4070f4;
+}
+.frontEnd h2 {
+    color: #494949;
+}
+.backEnd h2 {
+    color: #494949;
+}
+.softSkills {
+    color: #494949;
 }

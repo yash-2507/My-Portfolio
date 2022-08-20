@@ -17,14 +17,14 @@
     background: #4070f4;
     height: 3px;
     width: 4%;
-    margin-top: -6px;
+    margin-top: 6px;
 }
 .Project_Wrapper {
     padding: 50px 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 49%);
-    grid-template-rows: repeat(2, 49%);
+    grid-template-rows: auto;
     grid-gap: 50px;
 }
 .Project_content {
@@ -34,7 +34,6 @@
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 .Project_content img {
-    /* height: 50%; */
     width: 100%;
     border: none;
     border-radius: 10px;

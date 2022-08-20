@@ -11,13 +11,14 @@
     align-items: center;
 }
 .About_title {
+    margin-top: 20px;
     color: #4070f4;
 }
 .About_hr {
     background: #4070f4;
     height: 3px;
     width: 4%;
-    margin-top: -6px;
+    margin-top: 5px;
 }
 .content {
     display: flex;

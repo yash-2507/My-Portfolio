@@ -7,7 +7,7 @@
     user-select: none;
 }
 
-p {
+p, h2 {
     margin-block: 0;
 }
 
