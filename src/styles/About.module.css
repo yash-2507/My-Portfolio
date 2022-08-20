@@ -32,12 +32,12 @@
 }
 .About_desc {
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     color: gray;
-    font-weight: 600;
+    font-weight: 400;
 }
 .About_mail {
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 600;
     color: rgb(73, 73, 73);
 }

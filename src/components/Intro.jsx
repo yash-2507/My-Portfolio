@@ -96,7 +96,7 @@ export default function Intro() {
                             <i className='fa-brands fa-github'></i>
                         </motion.a>
                         <motion.a
-                            href='mailto:imyash.654@gmail.com'
+                            href='mailto:imyash.654@gmail.com?subject=Hello Yash!'
                             initial={{ opacity: 0, translateX: -50 }}
                             animate={{ opacity: 1, translateX: 0 }}
                             transition={{

@@ -78,8 +78,8 @@
 }
 .Project_tech {
     font-size: 14px;
-    font-weight: 700;
-    color: darkgray;
+    font-weight: 500;
+    color: rgb(73, 73, 73);
 }
 .Project_desc,
 .Project_desc1 {
