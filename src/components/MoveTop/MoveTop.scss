@@ -1,0 +1,12 @@
+.move-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    font-size: 70px;
+    cursor: pointer;
+    color: #494949;
+}
