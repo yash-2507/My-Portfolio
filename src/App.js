@@ -12,36 +12,36 @@ import styles from './styles/App.module.css';
 import './sass/main.scss';
 
 function App() {
-   const [loading, setLoading] = useState(true);
-   useEffect(() => {
-      loading
-         ? document.querySelector('body').classList.add('loading')
-         : document.querySelector('body').classList.remove('loading');
-   }, [loading]);
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        loading
+            ? document.querySelector('body').classList.add('loading')
+            : document.querySelector('body').classList.remove('loading');
+    }, [loading]);
 
-   return (
-      <div className={styles.App}>
-         <AnimateSharedLayout type='crossfade'>
-            <AnimatePresence>
-               {loading ? (
-                  <motion.div key='loader'>
-                     <Loader setLoading={setLoading} />
-                  </motion.div>
-               ) : (
-                  <>
-                     <CustomCursor />
-                     <Navbar />
-                     <Intro />
-                     <About />
-                     <Skills />
-                     <Project />
-                     <Contact />
-                  </>
-               )}
-            </AnimatePresence>
-         </AnimateSharedLayout>
-      </div>
-   );
+    return (
+        <div className={styles.App}>
+            <AnimateSharedLayout type='crossfade'>
+                <AnimatePresence>
+                    {loading ? (
+                        <motion.div key='loader'>
+                            <Loader setLoading={setLoading} />
+                        </motion.div>
+                    ) : (
+                        <>
+                            <CustomCursor />
+                            <Navbar />
+                            <Intro />
+                            <About />
+                            <Skills />
+                            <Project />
+                            <Contact />
+                        </>
+                    )}
+                </AnimatePresence>
+            </AnimateSharedLayout>
+        </div>
+    );
 }
 
 export default App;

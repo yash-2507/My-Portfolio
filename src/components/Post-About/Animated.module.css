@@ -1,0 +1,25 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+.parent {
+    font-size: 100px;
+    color: black;
+    letter-spacing: 0.15px;
+}
+.upperLine {
+    text-align: center;
+    font-weight: 700;
+}
+.lowerLine {
+    text-align: center;
+    margin-top: -50px;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}

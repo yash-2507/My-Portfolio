@@ -5,7 +5,6 @@ import Cart from '../assets/Cart.webp';
 import JCrew from '../assets/JCrew.webp';
 import upGrad from '../assets/upGrad.webp';
 import Revv from '../assets/Revv.webp';
-
 import Image from './Image';
 
 const container = {
