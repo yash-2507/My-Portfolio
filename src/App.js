@@ -10,6 +10,7 @@ import Project from './components/Project';
 import Skills from './components/Skills';
 import styles from './styles/App.module.css';
 import './sass/main.scss';
+import Animated from './components/Post-About/Animated';
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
                             <CustomCursor />
                             <Navbar />
                             <Intro />
+                            <Animated />
                             <About />
                             <Skills />
                             <Project />

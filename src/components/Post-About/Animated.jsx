@@ -17,11 +17,23 @@ export default function Animated() {
             {
                 x: 500,
                 scrollTrigger: {
-                    trigger: element.querySelector('#animated_container'),
-                    start: 'top top',
-                    end: 'bottom center',
+                    trigger: element,
+                    start: 'top top+=100',
                     scrub: true,
-                    markers: true,
+                },
+            },
+        );
+        gsap.fromTo(
+            element.querySelector('#second-paragraph'),
+            {
+                x: 0,
+            },
+            {
+                x: -500,
+                scrollTrigger: {
+                    trigger: element,
+                    start: 'top top+=100',
+                    scrub: true,
                 },
             },
         );
@@ -32,7 +44,9 @@ export default function Animated() {
                 <div className={styles.upperLine} id='first-paragraph'>
                     TURNING IDEAS INTO
                 </div>
-                <div className={styles.lowerLine}>DIGITAL EXPERIENCES</div>
+                <div className={styles.lowerLine} id='second-paragraph'>
+                    DIGITAL EXPERIENCES
+                </div>
             </div>
         </div>
     );

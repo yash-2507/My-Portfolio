@@ -13,35 +13,36 @@ export default function Navbar() {
 
    const handleScroll = () => {
       let y = window.scrollY;
-      if (y >= 0 && y < 500) {
+      // console.log(y);
+      if (y >= 0 && y < 1227) {
          setHome(true);
          setAbout(false);
          setSkills(false);
          setProject(false);
          setContact(false);
       }
-      if (y >= 500 && y < 880) {
+      if (y >= 1227 && y < 1497) {
          setHome(false);
          setAbout(true);
          setSkills(false);
          setProject(false);
          setContact(false);
       }
-      if (y >= 880 && y < 1450) {
+      if (y >= 1497 && y < 2055) {
          setHome(false);
          setAbout(false);
          setSkills(true);
          setProject(false);
          setContact(false);
       }
-      if (y >= 1450 && y < 2267) {
+      if (y >= 2055 && y < 2743) {
          setHome(false);
          setAbout(false);
          setSkills(false);
          setProject(true);
          setContact(false);
       }
-      if (y >= 2267) {
+      if (y >= 2743) {
          setHome(false);
          setAbout(false);
          setSkills(false);
@@ -92,7 +93,7 @@ export default function Navbar() {
                   }}
                   onClick={() => {
                      window.scrollTo({
-                        top: 500,
+                        top: 1227,
                         behavior: "smooth",
                      });
                   }}
@@ -110,7 +111,7 @@ export default function Navbar() {
                   }}
                   onClick={() => {
                      window.scrollTo({
-                        top: 880,
+                        top: 1497,
                         behavior: "smooth",
                      });
                   }}
@@ -128,7 +129,7 @@ export default function Navbar() {
                   }}
                   onClick={() => {
                      window.scrollTo({
-                        top: 1450,
+                        top: 2055,
                         behavior: "smooth",
                      });
                   }}
@@ -146,7 +147,7 @@ export default function Navbar() {
                   }}
                   onClick={() => {
                      window.scrollTo({
-                        top: 3000,
+                        top: 3028,
                         behavior: "smooth",
                      });
                   }}

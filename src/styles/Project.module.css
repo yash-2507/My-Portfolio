@@ -46,7 +46,7 @@
 .Project_contentWrapper {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 .Project_btnWrap {
     display: flex;
@@ -82,7 +82,7 @@
 }
 .Project_desc,
 .Project_desc1 {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     color: gray;
 }
