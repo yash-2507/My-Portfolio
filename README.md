@@ -12,4 +12,4 @@ This is my solo Project in which I created my Portfolio in 3 days.
 # Deployed Link
 <h4>My First Portfolio</h4>
 <b>Link</b>
-https://dev-yash-srivastava.netlify.app
+https://dev-yash.cf
