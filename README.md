@@ -1,5 +1,5 @@
 # My Personal Portfolio 
-This is my solo Project in which I created my Portfolio executed in 3 days.
+This is my solo Project in which I created my Portfolio in 3 days.
 
 # Tech-stacks used
 1. React.Js
